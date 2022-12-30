@@ -42,7 +42,7 @@
   ],
   "button": {
     "visible": true,
-    "label": "Visit on Github",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "label": "Github du site",
+    "url": "https://github.com/MrCrakerz/gatsby-presentation"
   }
 }
