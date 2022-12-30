@@ -1,23 +1,23 @@
 {
   "siteMetadata": {
-    "language": "en",
+    "language": "fr",
     "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
-    "title": "Gatsby Starter for Portfolio Minimal",
-    "titleTemplate": "%s · Portfolio Minimal",
-    "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
-    "author": "Konstantin Münster",
+    "title": "Veille Gatsby",
+    "titleTemplate": "%s · Gatsby Veille",
+    "description": "Veille technologique sur le framework Gatsby",
+    "author": "Mathis DE LAS HERAS",
     "avatar": "../content/images/gatsby.png",
-    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "bio": "Veille Techno sur l'outil Gatsby",
     "social": {
       "behance": "https://behance.com",
-      "github": "https://github.com/konstantinmuenster",
-      "medium": "https://konstantinmuenster.medium.com",
-      "linkedin": "https://www.linkedin.com/in/konstantin-muenster/",
-      "mail": "mailto:mail@konstantin.digital"
+      "github": "https://github.com/MrCrakerz",
+      "medium": "https://www.youtube.com/watch?v=jJt6ZcncTbs",
+      "linkedin": "https://lesjoiesducode.fr/quand-un-utilisateur-menvoie-un-mail-avec-juste-ecrit-ca-marche-pas",
+      "mail": "mailto:mathislag@hotmail.fr"
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Portfolio" },
+    "logo": { "text": "Gatsby" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },

@@ -1,14 +1,10 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageSrc: "../../images/the-great-gatsby.jpeg"
+imageAlt: "De quoi parle-t-on ?"
 ---
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+Gatsby, de son nom complet "Gatsby le magnifique" est un roman de 1926 ayant connu 4 adaptations au cinéma. L'adaptation de 2013 avec Dicaprio dans le rôle-titre est tout simplement sublime, tout comme le framework JS homonyme GatsbyJs. 
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
+J'aurais pu vous faire un site entier expliquant pourquoi Gatsby est un véritable chef-d'oeuvre mais aujourd'hui on parle Tech ! Alors accrochez-vous M'sieur Journet je vais vous expliquer ce qu'est GatsbyJs. 
 
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
-
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
-
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+Gatsby est un framework de développement Web permettant la création de sites statiques. Ce dernier est open source et basé sur React, ce qui vous permet de créer des sites et des applications Web performants. Il utilise une approche de construction de sites statiques pour fournir une expérience utilisateur rapide et une mise en page fluide, tout en permettant l'intégration de données dynamiques grâce à des sources de données flexibles comme Markdown, GraphQL et APIs REST.

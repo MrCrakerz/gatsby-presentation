@@ -1,5 +1,5 @@
 {
-  "intro": "Hej",
+  "intro": "Bonjour M.Journet",
   "heroPhoto": {
     "src": "../../images/lego-dummy.png",
     "alt": "My Photo"
@@ -8,15 +8,15 @@
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "Que faites vous sur ce site ?",  
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
-    "suffix": "."
+    "prefix": "Si c'est pour découvrir ",
+    "highlight": "Gatsby, ",
+    "suffix": "alors vous êtes au bon endroit !"
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "Des easter eggs se sont peut-être introduits dans le site. (Faut bien vous motiver à lire en entier !)",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
-    "showIcons": false
+    "showIcons": true
   }
 }
