@@ -20,14 +20,14 @@
     "logo": { "text": "Gatsby" },
     "navigation": {
       "header": [
-        { "label": "About", "url": "/#about" },
-        { "label": "Presentation", "url": "/presentation" },
+        { "label": "Introduction", "url": "/#about" },
+        { "label": "Presentations", "url": "/blog" },
         { "label": "Features", "url": "/#features" },
         { "label": "Github", "url": "/#github" }
       ],
       "ctaButton": {
         "openNewTab": true,
-        "label": "Resume",
+        "label": "DOG",
         "url": "/resume.pdf"
       },
       "footer": [

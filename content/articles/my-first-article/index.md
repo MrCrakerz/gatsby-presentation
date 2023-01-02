@@ -1,88 +1,178 @@
 ---
-title: "Présentation de Gatsby Cloud"
-description: "Présentation de la plateforme Gatsby Cloud."
-date: "2021-05-28"
+title: "Présentation du Framework Gatsby"
+description: "Présentation du Framework GatsbyJs "
+date: "2023-01-01"
 banner:
   src: "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg"
   alt: "Image"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Florian Olivo</a></u>'
 categories:
   - "Gatsby"
-  - "Cloud"
+  - "Framework"
 keywords:
-  - "Example"
+  - "Veille!!"
   - "Gatsby"
-  - "Cloud"
-  - "Blog"
+  - "Framework"
+  - "Presentation"
 ---
 
-## Code block test
+## Le framework gatsby
 
-```css
-.AClass .Subtitle {
-  margin: -0.5rem 0 0 0;
-  font-weight: 700;
-      font-size: 1.25rem;
-  line-height: 1.5rem;
-}
+Tout comme je l'ai expliqué sur la page d'introduction, la promesse du framework gatsby est de faciliter la mise en place de sites statiques, tout en promettant leur sécurité et leur rapidité. L'objectif est également de combiner plusieurs technologies afin de pouvoir créer de beaux sites pouvant répondre à un maximum de besoins.
 
-.AnotherClass p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-}
+Pour cela, gatsby intègre nativement ReactJs, Markdown et GraphQl. Ensuite, libre à nous de les utiliser ou non. 
+Lors de la création de notre site en ligne de commandes, ```npm init gatsby``` il est possible de préciser si on souhaite que TypeScript soit mit à la place de JavaScript dans les fichiers de départ de Gatsby.
 
-.AThirdClass {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+L'utilisation de Markdown peut notamment permettre au développeur de déléguer la gestion du contenu au client ou autre. 
 
-@media (max-width: 768px) {
-  .AClass {
-    flex-direction: column;
-  }
-  .AnotherClass {
-    display: block;
-  }
-}
+Gatsby propose par ailleurs un système de plugins permettant d'ajouter des fonctionnalités facilement. 
+```sh
+npm install gatsby-plugin-material-ui@next @emotion/react
+```
+La commande ci-dessus permet d'utiliser MaterialUi. 
+Gatsby met ainsi à disposition une documentation pour chacun de ces plugins indiquant comment les installer et les utiliser.
+Parmi ces plugins, il y a un grand nombre de CMS (Contentful, WordPress, Drupal, Sanity) mais également des plugins permettant la gestion de payements/e-commerce (Shopify) ainsi que des plugins d'UI et de CSS (Material UI, PostCSS, Emotion).
+
+Cette diversité et ce grand nombre de fonctionnalités/plugins peut au final venir nous faire oublier que nous sommes sur un site statique. 
+
+```js
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import * as styles from "../components/index.module.css"
+
+const links = [
+  {
+    text: "Tutorial",
+    url: "https://www.gatsbyjs.com/docs/tutorial",
+    description:
+      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+  },
+  {
+    text: "Examples",
+    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    description:
+      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+  },
+  {
+    text: "Plugin Library",
+    url: "https://www.gatsbyjs.com/plugins",
+    description:
+      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+  },
+  {
+    text: "Build and Host",
+    url: "https://www.gatsbyjs.com/cloud",
+    description:
+      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+  },
+]
+
+const samplePageLinks = [
+  {
+    text: "Page 2",
+    url: "page-2",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+  { text: "TypeScript", url: "using-typescript" },
+  { text: "Server Side Rendering", url: "using-ssr" },
+  { text: "Deferred Static Generation", url: "using-dsg" },
+]
+
+const moreLinks = [
+  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  {
+    text: "Documentation",
+    url: "https://gatsbyjs.com/docs/",
+  },
+  {
+    text: "Starters",
+    url: "https://gatsbyjs.com/starters/",
+  },
+  {
+    text: "Showcase",
+    url: "https://gatsbyjs.com/showcase/",
+  },
+  {
+    text: "Contributing",
+    url: "https://www.gatsbyjs.com/contributing/",
+  },
+  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+]
+
+const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+
+const IndexPage = () => (
+  <Layout>
+    <div className={styles.textCenter}>
+      <StaticImage
+        src="../images/example.png"
+        loading="eager"
+        width={64}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ marginBottom: `var(--space-3)` }}
+      />
+      <h1>
+        Welcome to <b>Gatsby!</b>
+      </h1>
+      <p className={styles.intro}>
+        <b>Example pages:</b>{" "}
+        {samplePageLinks.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <Link to={link.url}>{link.text}</Link>
+            {i !== samplePageLinks.length - 1 && <> · </>}
+          </React.Fragment>
+        ))}
+        <br />
+        Edit <code>src/pages/index.js</code> to update this page.
+      </p>
+    </div>
+    <ul className={styles.list}>
+      {links.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+          >
+            {link.text} ↗
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    {moreLinks.map((link, i) => (
+      <React.Fragment key={link.url}>
+        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+        {i !== moreLinks.length - 1 && <> · </>}
+      </React.Fragment>
+    ))}
+  </Layout>
+)
+
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head = () => <Seo title="Home" />
+
+export default IndexPage
 ```
 
-Inline code: `print()`
 
- 
-Le framework Gatsby possède un atout de taille face à la concurrence. En effet, un service de Cloud est proposé à l'utilisateur, Gatsby Cloud (pourquoi faire compliquer !) . 
-Gatsby Cloud se présente sous forme de site web permettant à l'utilisateur de gérer son site sans passer par les commandes fastidieuses en bash.
+Le code que vous voyez ci-dessus est le code de la page d'index.js du starter par défaut de Gatsby.
+Les autres starters ont, dans la globalité, les pages codées de la même manière que ci-dessus. 
 
-Afin de vous faire un inventaire des fonctionnalités importantes, je vais simuler avec vous le cycle de vie d'un site avec Gatsby Cloud.
+Cette manière de rédiger (stocker les contenus, afficher dans des tableaux en haut de page) permet au contenu d'être visible et facilement modifiable, pas besoin d'être développeur pour apporter des modifications.
 
-Pour lancer un projet avec le framework gatsby, on peut utiliser les commandes basiques données dans la documentation :
-```
-npm init gatsby
-cd my-gatsby-site
-npm run develop
-```
-A la suite de ces trois commandes nous pouvons déjà avoir un site tournant sur le localhost.
-
-Bien, maintenant faisons la même chose mais en passant cette fois ci par Gatsby Cloud. 
-Il va falloir, dans un premier temps, comme sur tous les sites, vous créer un compte. Attention, ici, se connecter en utilisant son compte Github est, en plus d'être un gain de temps, un réel avantage (on va voir pourquoi dans 30 secondes). 
-
-On peut alors commencer par créer notre site. Dans un premier temps il va nous être demandé si nous souhaitons importer un projet depuis notre github ou bien en commencer un nouveau utilisant les thèmes proposés par gatsby. Ici nous allons partir de zéro et donc sélectionner la deuxième option. Je vous conseille d'être vigiliant lors du choix du thème de départ car ceux-ci peuvent demander à être liés à des CMS, ce qui peut se montrer contraignant dans le cas où vous n'aviez pas prévu d'en utiliser.
-
-Une fois notre thème sélectionné Gatsby Cloud va vous permettre de directement créer un repository Github pour votre site. C'est après cette étape que la magie va enfin opérer ! En effet, Gatsby va alors automatiquement vous **génerer un nom de domaine**, **build le projet** et le **mettre en ligne** ! Il va même par la suite s'occuper de faire la mise en production lorsqu'un changement surviendra dans le repository.  
-
-
-## Utile ?
-
-C'est bien joli tout cela, mais est-ce que c'est réellement utile, et si oui, à qui ?
-
-Le framework Gatsby et son interface de gestion Gatsby Cloud semble viser les mêmes cibles, ce qui semble cohérent. 
-Un public ayant des connaissances relativement solides en programmation web peut être intéressé par Gatsby. En effet, des technologies assez avancées sont utilisées par le framework, je pense nottamment à React ou à GraphQL, qui ne sont pas faciles à comprendre pour des néophites.
-
-Cependant, c'est un framework qui est destiné à  la réalisation de sites relativement basiques et de petits projets. 
-
-Il serait pertinant de l'utiliser pour créer des blogs, des portfolios ou des sites vitrines par exemple. 
-Gatsby pourrait parfaitement convenir à des developpeurs freelance réalisant des sites simples. Gatsby cloud serait pour eux un réel avantage car cela leur permettrai de pouvoir gérer simplement et efficacement une multitude de site 
-![This is the alt tag.](../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg "This is a markdown [caption](https://konstantin.digital).")
+Cependant, si on veut modifier l'apparence du contenu, cela devient tout de suite bien plus fastidieux. En effet, comme tout le contenu est renseigné dans les tableaux en haut de page, le reste du code est brut et difficile à déchiffrer pour des non initiés.
 
 
 ![This is the alt tag.](../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg)
