@@ -1,11 +1,11 @@
 ---
 title: "Présentation du Framework Gatsby"
-description: "Présentation du Framework GatsbyJs "
+description: "Présentation du Framework GatsbyJs"
 date: "2023-01-01"
 banner:
-  src: "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg"
+  src: "../../images/framework.jpeg"
   alt: "Image"
-  caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Florian Olivo</a></u>'
+  caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Moi</a></u>'
 categories:
   - "Gatsby"
   - "Framework"
@@ -172,7 +172,7 @@ Les autres starters ont, dans la globalité, les pages codées de la même mani�
 
 Cette manière de rédiger (stocker les contenus, afficher dans des tableaux en haut de page) permet au contenu d'être visible et facilement modifiable, pas besoin d'être développeur pour apporter des modifications.
 
-Cependant, si on veut modifier l'apparence du contenu, cela devient tout de suite bien plus fastidieux. En effet, comme tout le contenu est renseigné dans les tableaux en haut de page, le reste du code est brut et difficile à déchiffrer pour des non initiés.
+Cependant, si on veut modifier l'apparence du contenu, cela devient tout de suite bien plus fastidieux. En effet, comme tout le contenu est renseigné dans les tableaux en haut de page, le reste du code est brut et difficile à déchiffrer pour des non initiés. Dans certains thèmes la structure des pages est cachée dans le node_modules.
 
 
-![This is the alt tag.](../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg)
+
