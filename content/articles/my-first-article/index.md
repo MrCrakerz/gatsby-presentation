@@ -167,12 +167,11 @@ export default IndexPage
 ```
 
 
-Le code que vous voyez ci-dessus est le code de la page d'index.js du starter par défaut de Gatsby.
+Le code que vous voyez ci-dessus est le code de la page d'index js du starter par défaut de Gatsby.
 Les autres starters ont, dans la globalité, les pages codées de la même manière que ci-dessus. 
 
-Cette manière de rédiger (stocker les contenus, afficher dans des tableaux en haut de page) permet au contenu d'être visible et facilement modifiable, pas besoin d'être développeur pour apporter des modifications.
+Cette manière de rédiger (stocker les contenus, afficher dans des tableaux en haut du page) permet au contenu d'être visible et facilement modifiable, pas besoin d'être développeur pour apporter des modifications.
 
-Cependant, si on veut modifier l'apparence du contenu, cela devient tout de suite bien plus fastidieux. En effet, comme tout le contenu est renseigné dans les tableaux en haut de page, le reste du code est brut et difficile à déchiffrer pour des non initiés. Dans certains thèmes la structure des pages est cachée dans le node_modules.
-
+Cependant, si on veut modifier l'apparence du contenu, cela devient tout de suite bien plus fastidieux. En effet, comme tout le contenu est renseigné dans les tableaux en haut du page, le reste du code est brut et difficile à déchiffrer pour des non initiés. Dans certains thèmes la structure des pages est cachée dans le node modules.
 
 
